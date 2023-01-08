@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitlabTemplateGenerator", "src\GitlabTemplateGenerator\GitlabTemplateGenerator.csproj", "{BEAC0C63-9EF6-48AC-87A6-01B7B0805A50}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GitlabTemplateGeneratorTool", "src\GitlabTemplateGeneratorTool\GitlabTemplateGeneratorTool.csproj", "{E7DD7DEA-94A7-47C9-BBB1-C3BF10805E75}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BEAC0C63-9EF6-48AC-87A6-01B7B0805A50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BEAC0C63-9EF6-48AC-87A6-01B7B0805A50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BEAC0C63-9EF6-48AC-87A6-01B7B0805A50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BEAC0C63-9EF6-48AC-87A6-01B7B0805A50}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7DD7DEA-94A7-47C9-BBB1-C3BF10805E75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7DD7DEA-94A7-47C9-BBB1-C3BF10805E75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7DD7DEA-94A7-47C9-BBB1-C3BF10805E75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7DD7DEA-94A7-47C9-BBB1-C3BF10805E75}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FD4637F7-9477-4A76-AEF3-141DBD4FEE33}
+	EndGlobalSection
+EndGlobal

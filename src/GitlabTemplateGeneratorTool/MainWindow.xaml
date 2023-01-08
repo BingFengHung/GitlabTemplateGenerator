@@ -1,0 +1,51 @@
+﻿<Window x:Class="GitlabTemplateGeneratorTool.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GitlabTemplateGeneratorTool"
+        Title="GitLab Template Generator"
+        mc:Ignorable="d"
+        Height="250" Width="400">
+    <Window.DataContext>
+        <local:MainViewModel/>
+    </Window.DataContext>
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <Style TargetType="{x:Type TextBlock}" >
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+
+            <Style TargetType="{x:Type TextBox}" >
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+
+            <Style TargetType="{x:Type Button}" >
+                <Setter Property="FontSize" Value="20"/>
+            </Style>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <StackPanel Orientation="Vertical" Margin="5">
+        <TextBlock Text="來源 Repository Uri"/>
+        <TextBox Text="{Binding FromUri, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+        <TextBlock Text="目標 Repository Uri"/>
+        <TextBox Text="{Binding ToUri, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+
+        <TextBlock Text="下載路徑"/>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition Width="auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox Text="{Binding DownloadPath, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+            <Button Grid.Column="1" 
+                    Content="..."  
+                    Command="{Binding SelectDownloadPathCommand}"/>
+        </Grid>
+
+        <Button Content="Clone" 
+                Command="{Binding CloneClickCommand}" />
+    </StackPanel>
+</Window>
